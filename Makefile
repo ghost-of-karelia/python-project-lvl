@@ -12,5 +12,3 @@ package-install:
 
 brain-games:
 	poetry run brain-games
-
-.PHONY: test 
