@@ -2,7 +2,7 @@
 #!/usr/bin/env python3
 '''
 
-from random import randint
+from random import randint, choice
 from brain_games.cli import welcome_user
 
 def main():
@@ -11,13 +11,15 @@ def main():
 
     rounds_left = 3
 
+    operators = ['+', '-', '*']
     while rounds_left > 0:
         number1 = randint(0, 100)
         number2 = randint(0, 100)
+        operator = choice(operators)
 
-        print(f'Question: {number1} + {number2}')
+        print(f'Question: {number1} {operator} {number2}')
 
-        correct_answer = number1 + number2
+        correct_answer = eval(str(number1) + operator + str(number2))
         answer = int(input('Your answer: '))
 
         if answer != correct_answer:
