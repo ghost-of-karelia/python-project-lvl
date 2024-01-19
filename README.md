@@ -35,9 +35,14 @@ Step 9: Add Brain Prime game: ✓ DONE
         Record Ascii: In Progress
         Update pyend and terminal — w/ Sergei: In Progress
 
+        Update lint mistakes: In Progress
+        Add comments on imporvements: In Progress
+        Update Readme: In progress
+        Pass Code Review: In progress
+
 Questions: 
 - build, publish and debug // build - install
 - pyenv 
-- Re-usage of scripts // welcome_user()
+- Re-usage of scripts // rounds_left = 3
 - Git untracked 
 
