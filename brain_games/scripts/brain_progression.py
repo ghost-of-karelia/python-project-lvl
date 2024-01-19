@@ -5,23 +5,24 @@ from brain_games.cli import welcome_user
 def main():
     
     name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
+    print('What number is missing in the progression?')
     
     rounds_left = 3
     
     while rounds_left > 0:
         
-        number1 = int(randint(0, 100))
-        number2 = int(randint(0, 100))
+        number1 = int(randint(0, 20))
+        step = int(randint(1, 5))
+        progression = []
 
-        correct_answer = 1
-        for i in range(min(number1, number2), 0, -1):
-            if number1 % i == 0 and number2 % i == 0:
-                correct_answer = i
-                break
-            i -= 1
+        for i in range(number1, number1 + randint(5, 49), step):
+            progression.append(i)
+            
+        correct_answer_position = randint(0, len(progression) - 1)
+        correct_answer = progression[correct_answer_position]
+        progression[correct_answer_position] = '..'
 
-        print(f'Question: {number1} {number2}')
+        print('Question:', *progression)
         answer = int(input('Your answer: '))
 
         if answer != correct_answer:

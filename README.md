@@ -30,8 +30,6 @@ Step 7: Add Brain-GCD game: ✓ DONE
     
 Step 8: Add Brain-Progression game: In Progress
         Record Ascii: In Progress
-
-
         Update pyend and terminal — w/ Sergei: In Progress
 
 Questions: 
