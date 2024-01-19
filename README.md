@@ -28,7 +28,10 @@ Step 6: Brain-calc ✓ DONE
 Step 7: Add Brain-GCD game: ✓ DONE
         Record Ascii: In progress
     
-Step 8: Add Brain-Progression game: In Progress
+Step 8: Add Brain-Progression game: ✓ DONE
+        Record Ascii: In Progress
+
+Step 9: Add Brain Prime game: ✓ DONE
         Record Ascii: In Progress
         Update pyend and terminal — w/ Sergei: In Progress
 
