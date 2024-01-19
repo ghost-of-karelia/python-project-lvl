@@ -1,27 +1,27 @@
-'''
-#!/usr/bin/env python3
-'''
-
 from random import randint, choice
 from brain_games.cli import welcome_user
+
 
 def main():
     
     name = welcome_user()
-    print('What is the result of the expression?')
-
+    print('Find the greatest common divisor of given numbers.')
+    
     rounds_left = 3
     
-    operators = ['+', '-', '*']
     while rounds_left > 0:
+        
+        number1 = int(randint(0, 100))
+        number2 = int(randint(0, 100))
 
-        number1 = randint(0, 100)
-        number2 = randint(0, 100)
-        operator = choice(operators)
+        correct_answer = 1
+        for i in range(min(number1, number2), 0, -1):
+            if number1 % i == 0 and number2 % i == 0:
+                correct_answer = i
+                break
+            i -= 1
 
-        print(f'Question: {number1} {operator} {number2}')
-
-        correct_answer = eval(str(number1) + operator + str(number2))
+        print(f'Question: {number1} {number2}')
         answer = int(input('Your answer: '))
 
         if answer != correct_answer:
@@ -31,9 +31,9 @@ def main():
         else:
             rounds_left -= 1
             print('Correct!')
-
+    
     print(f'Congratulations, {name}!')
 
 
-if __name__ == '__main__':
+if __name__ == 'main':
     main()

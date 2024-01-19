@@ -21,14 +21,15 @@ Step 5: Add Brain-even ✓ DONE
         Record Ascii: In progress
 
 Step 6: Brain-calc ✓ DONE
-        Add operations random: In progress
+        Add operations random: ✓ DONE
         Record Ascii: In Progress
         Architecture Games Playes, dir Games: In progress
 
-Step 7: Add Brain-GCD game: In progress 
+Step 7: Add Brain-GCD game: ✓ DONE
         Record Ascii: In progress
     
-Step 8: 
+Step 8: Add Brain-Progression game: In Progress
+        Record Ascii: In Progress
 
 
         Update pyend and terminal — w/ Sergei: In Progress
