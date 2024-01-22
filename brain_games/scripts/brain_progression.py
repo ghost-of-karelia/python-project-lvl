@@ -32,7 +32,7 @@ def main():
         else:
             rounds_left -= 1
             print('Correct!')
-    
+
     print(f'Congratulations, {name}!')
 
 

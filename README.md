@@ -34,6 +34,7 @@ Step 8: Add Brain-Progression game: ✓ DONE
 Step 9: Add Brain Prime game: ✓ DONE
         Record Ascii: In Progress
         Update pyend and terminal — w/ Sergei: In Progress
+        Update pyproject.toml with required fields: In Progress
 
         Update lint mistakes: In Progress
         Add comments on imporvements: In Progress
