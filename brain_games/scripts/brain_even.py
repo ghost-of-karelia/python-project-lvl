@@ -1,16 +1,16 @@
-'''
 #!/usr/bin/env python3
-'''
 
 from random import randint
 from brain_games.cli import welcome_user
+from brain_games.consts import ROUNDS_TO_PLAY
 
 
 def main():
     
     name = welcome_user()
+    rounds_left = ROUNDS_TO_PLAY
+
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    rounds_left = 3
 
     while rounds_left > 0:
         number = randint(0, 100)
