@@ -1,16 +1,21 @@
 [![Actions Status](https://github.com/ghost-of-karelia/python-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ghost-of-karelia/python-project-lvl1/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/c412faef76dadf07cda8/maintainability)](https://codeclimate.com/github/ghost-of-karelia/python-project-lvl/maintainability)
 
 
-### Brain Games 
+## Brain Games 
 
 This is a Python learning game project called Brain Games. Built with Python, it's used to practice with virtual environments, Poetry, Makefile and git.
 
-## Install 
-To install the game download, then make build, make install. If successful, the command make brain-games will greet you 
+## Install & Run
+To install the games, download, then use following commands make build, make install. If successful, the command make brain-games will greet you. 
 
-####
-Test text 
+### Games to play
 
+Run make brain-games 
+Run make brain-calc
+Run make brain-even
+Run make brain-gcd
+Run make brain-prime
+Run make brain-progression
 
 ### TO-DO
 
