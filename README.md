@@ -70,7 +70,8 @@ Step 6:
 - Add operations random: ✓ DONE
 - Record Ascii: ✓ DONE
 
-Step 7: - Add Brain-GCD game: ✓ DONE
+Step 7: 
+- Add Brain-GCD game: ✓ DONE
 - Record Ascii: ✓DONE
 
 Step 8: - Add Brain-Progression game: ✓ DONE
