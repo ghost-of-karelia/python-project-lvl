@@ -34,7 +34,7 @@ def play_brain_progression(rounds_left, name):
 
 
 def main():
-    
+
     print('What number is missing in the progression?')
     play_brain_progression(ROUNDS_TO_PLAY, welcome_user())
 
