@@ -10,11 +10,11 @@ def play_brain_progression(rounds_left, name):
     if rounds_left == 0:
         return print(f'Congratulations, {name}!')
 
-    number1 = int(randint(0, 20))
-    step = int(randint(1, 5))
+    number1 = int(randint(0, 12))
+    step = int(randint(3, 7))
     progression = []
 
-    for i in range(number1, number1 + randint(5, 49), step):
+    for i in range(number1, number1 + randint(25, 72), step):
         progression.append(i)
 
     correct_answer_position = randint(0, len(progression) - 1)
