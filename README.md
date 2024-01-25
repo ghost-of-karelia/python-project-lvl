@@ -38,7 +38,10 @@ Get a number, and define if it is a prime or not by entering 'yes' or 'no'.
 Run `make brain-progression`
 Get a progression of numbers, and enter the numbers that is missing.
 
-### TO-DO
+## HOW WAS THE PROJECT DONE 
+As this is a test project, this list describes the step taken to create the project. 
+
+### Step-by-step description
 
 Step 1: 
 - Poetry initialization ✓DONE
@@ -65,8 +68,7 @@ Step 5:
 Step 6: 
 - Brain-calc ✓ DONE
 - Add operations random: ✓ DONE
-- Record Ascii: In Progress
-- Architecture Games Playes, dir Games: Question
+- Record Ascii: ✓ DONE
 
 Step 7: - Add Brain-GCD game: ✓ DONE
 - Record Ascii: ✓DONE
@@ -84,6 +86,7 @@ Step 10: Code Review
 - Update lint mistakes ✓DONE
 - Update Readme ✓DONE
 - Update pyend and terminal — w/ Sergei
+- Questions on architecture Games Playes, dir Games
 - Pass Code Review 
 
 
