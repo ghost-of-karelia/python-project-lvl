@@ -22,7 +22,10 @@ def play_brain_prime(rounds_left, name):
             correct_answer = 'yes'
 
     if answer != correct_answer:
-        print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.')
+        print(
+            f'\'{answer}\' is wrong answer ;(. '
+            f'Correct answer was \'{correct_answer}\'.'
+        )
         return print(f'Let\'s try again, {name}!')
     else:
         print('Correct!')

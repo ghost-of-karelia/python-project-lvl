@@ -25,7 +25,10 @@ def play_brain_progression(rounds_left, name):
     answer = int(input('Your answer: '))
 
     if answer != correct_answer:
-        print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.')
+        print(
+            f'\'{answer}\' is wrong answer ;(. '
+            f'Correct answer was \'{correct_answer}\'.'
+        )
         return print(f'Let\'s try again, {name}!')
     else:
         print('Correct!')

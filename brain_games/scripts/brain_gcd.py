@@ -23,7 +23,10 @@ def play_brain_dcg(rounds_left, name):
         i -= 1
 
     if answer != correct_answer:
-        print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.')
+        print(
+            f'\'{answer}\' is wrong answer ;(. '
+            f'Correct answer was \'{correct_answer}\'.'
+        )
         return print(f'Let\'s try again, {name}!')
     else:
         print('Correct!')
