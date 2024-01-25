@@ -32,7 +32,7 @@ def play_brain_prime(rounds_left, name):
 
 def main():
     
-    print('Answer "yes" if the number is prime, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     play_brain_prime(ROUNDS_TO_PLAY, welcome_user())
 
 
