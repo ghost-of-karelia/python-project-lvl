@@ -10,16 +10,15 @@ def play_brain_prime(rounds_left, name):
     if rounds_left == 0:
         return print(f'Congratulations, {name}!')
 
-    number = randint(0, 100)
+    number = randint(2, 100)
     print('Question:', number)
     answer = input('Your answer: ')
-
+    correct_answer = 'yes'
+    
     for i in range(2, number):
         if number % i == 0:
             correct_answer = 'no'
             break
-        else:
-            correct_answer = 'yes'
 
     if answer != correct_answer:
         print(
@@ -31,8 +30,6 @@ def play_brain_prime(rounds_left, name):
         print('Correct!')
         rounds_left -= 1
         play_brain_prime(rounds_left, name)
-
-    print(f'Congratulations, {name}!')
 
 
 def main():
