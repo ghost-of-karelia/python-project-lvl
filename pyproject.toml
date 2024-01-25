@@ -1,12 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "A test project to learn how git, Makefile, Poetry and Flake8 work"
 authors = ["ghost-of-karelia <mitrijpavlov@gmail.com>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Topic :: Games/Entertainment"
+]
+repository = "https://github.com/ghost-of-karelia/python-project-lvl"
 
 [tool.poetry.dependencies]
 python = "^3.9"
