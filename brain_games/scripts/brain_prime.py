@@ -14,7 +14,7 @@ def play_brain_prime(rounds_left, name):
     print('Question:', number)
     answer = input('Your answer: ')
     correct_answer = 'yes'
-    
+
     for i in range(2, number):
         if number % i == 0:
             correct_answer = 'no'
