@@ -4,8 +4,9 @@ from random import randint
 from brain_games.cli import welcome_user
 from brain_games.consts import ROUNDS_TO_PLAY
 
+
 def play_brain_prime(rounds_left, name):
-    
+
     if rounds_left == 0:
         return print(f'Congratulations, {name}!')
 
@@ -20,7 +21,7 @@ def play_brain_prime(rounds_left, name):
         else:
             correct_answer = 'yes'
 
-    if answer != correct_answer:        
+    if answer != correct_answer:
         print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.')
         return print(f'Let\'s try again, {name}!')
     else:
@@ -30,8 +31,9 @@ def play_brain_prime(rounds_left, name):
 
     print(f'Congratulations, {name}!')
 
+
 def main():
-    
+
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     play_brain_prime(ROUNDS_TO_PLAY, welcome_user())
 

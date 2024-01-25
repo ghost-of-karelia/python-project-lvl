@@ -6,20 +6,20 @@ from brain_games.consts import ROUNDS_TO_PLAY
 
 
 def play_brain_even(rounds_left, name):
-    
+
     if rounds_left == 0:
         return print(f'Congratulations, {name}!')
-    
+
     number = randint(0, 100)
     print('Question:', number)
     answer = input('Your answer: ')
-    
+
     if number % 2 == 0:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
 
-    if answer != correct_answer:        
+    if answer != correct_answer:
         print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.')
         return print(f'Let\'s try again, {name}!')
     else:
@@ -29,7 +29,7 @@ def play_brain_even(rounds_left, name):
 
 
 def main():
-    
+
     print('Answer "yes" if the number is even, otherwise answer "no".')
     play_brain_even(ROUNDS_TO_PLAY, welcome_user())
 
