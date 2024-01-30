@@ -11,12 +11,12 @@ def play(rounds_left):
 
     for _ in range(rounds_left):
 
-        number = randint(0, 100)
-        print('Question:', number)
+        x = randint(0, 100)
+        print('Question:', x)
 
         answer = request_answer()
 
-        if number % 2 == 0:
+        if x % 2 == 0:
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
