@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
-import prompt
 from random import randint, choice
-from brain_games.cli import welcome_user
+from brain_games.cli import welcome_user, request_answer, verify_answer
 
 
 def play(rounds_left):
@@ -18,7 +17,8 @@ def play(rounds_left):
         operator = choice(operators)
 
         print(f'Question: {a} {operator} {b}')
-        answer = int(prompt.string('Your answer: '))
+
+        answer = int(request_answer())
 
         if operator == '+':
             correct_answer = a + b
@@ -27,14 +27,7 @@ def play(rounds_left):
         if operator == '*':
             correct_answer = a * b
 
-        if answer != correct_answer:
-            print(
-                f'\'{answer}\' is wrong answer ;(. '
-                f'Correct answer was \'{correct_answer}\'.'
-            )
-            print(f'Let\'s try again, {name}!')
+        if not verify_answer(answer, correct_answer, name):
             return None
-
-        print('Correct!')
 
     print(f'Congratulations, {name}!')
