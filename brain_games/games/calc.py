@@ -17,7 +17,6 @@ def play(rounds_left):
         operator = choice(operators)
 
         print(f'Question: {a} {operator} {b}')
-
         answer = int(request_answer())
 
         if operator == '+':
