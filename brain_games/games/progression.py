@@ -9,12 +9,12 @@ def play(rounds_left):
 
     name = welcome_user()
     print('What number is missing in the progression?')
-    
+
     for _ in range(rounds_left):
-        
+
         number1 = int(randint(0, 12))
         step = int(randint(3, 8))
-        
+
         progression = []
         for i in range(randint(7, 12)):
             progression.append(number1)
@@ -26,7 +26,7 @@ def play(rounds_left):
 
         print('Question:', *progression)
         answer = int(prompt.string('Your answer: '))
-    
+
         if answer != correct_answer:
             print(
                 f'\'{answer}\' is wrong answer ;(. '
@@ -34,8 +34,7 @@ def play(rounds_left):
             )
             print(f'Let\'s try again, {name}!')
             return None
-        
+
         print('Correct!')
 
     print(f'Congratulations, {name}!')
-

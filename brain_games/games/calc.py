@@ -6,7 +6,7 @@ from brain_games.cli import welcome_user
 
 
 def play(rounds_left):
-    
+
     name = welcome_user()
     print('What is the result of the expression?')
 
@@ -33,8 +33,8 @@ def play(rounds_left):
                 f'Correct answer was \'{correct_answer}\'.'
             )
             print(f'Let\'s try again, {name}!')
-            return None 
-        
+            return None
+
         print('Correct!')
 
     print(f'Congratulations, {name}!')

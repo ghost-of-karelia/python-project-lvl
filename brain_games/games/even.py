@@ -6,7 +6,7 @@ from brain_games.cli import welcome_user
 
 
 def play(rounds_left):
-    
+
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
@@ -28,9 +28,7 @@ def play(rounds_left):
             )
             print(f'Let\'s try again, {name}!')
             return None
-        
+
         print('Correct!')
 
     print(f'Congratulations, {name}!')
-
-
