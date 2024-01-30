@@ -11,15 +11,15 @@ def play(rounds_left):
 
     for _ in range(rounds_left):
 
-        number1 = int(randint(0, 100))
+        a = int(randint(0, 100))
         number2 = int(randint(0, 100))
-        print(f'Question: {number1} {number2}')
+        print(f'Question: {a} {number2}')
         correct_answer = 1
 
         answer = int(request_answer())
 
-        for i in range(min(number1, number2), 0, -1):
-            if number1 % i == 0 and number2 % i == 0:
+        for i in range(min(a, number2), 0, -1):
+            if a % i == 0 and number2 % i == 0:
                 correct_answer = i
                 break
 
