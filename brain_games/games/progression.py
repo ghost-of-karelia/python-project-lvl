@@ -8,13 +8,13 @@ def play(rounds_left, name):
 
     for _ in range(rounds_left):
 
-        number1 = int(randint(0, 12))
+        number_0 = int(randint(0, 12))
         step = int(randint(3, 8))
 
         progression = []
         for i in range(randint(7, 12)):
-            progression.append(number1)
-            number1 += step
+            progression.append(number_0)
+            number_0 += step
 
         correct_answer_position = randint(0, len(progression) - 1)
         correct_answer = progression[correct_answer_position]
