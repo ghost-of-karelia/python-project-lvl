@@ -8,17 +8,17 @@ def play(rounds_left, name):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     for _ in range(rounds_left):
-
+        
         number = randint(9, 100)
         print('Question:', number)
-        correct_answer = 'yes'
 
         answer = request_answer()
+        correct_answer = 'yes'
 
         for i in range(2, int(sqrt(number))):
             if number % i == 0:
                 correct_answer = 'no'
-                break
+            break
 
         if not verify_answer(answer, correct_answer, name):
             return None
