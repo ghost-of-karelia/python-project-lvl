@@ -1,12 +1,9 @@
-#!/usr/bin/env python3
-
 from random import randint, choice
-from brain_games.cli import welcome_user, request_answer, verify_answer
+from brain_games.cli import request_answer, verify_answer
 
 
-def play(rounds_left):
+def play(rounds_left, name):
 
-    name = welcome_user()
     print('What is the result of the expression?')
 
     for _ in range(rounds_left):
