@@ -9,7 +9,7 @@ def play(rounds_left, name):
 
     for _ in range(rounds_left):
 
-        number = randint(2, 100)
+        number = randint(9, 100)
         print('Question:', number)
         correct_answer = 'yes'
 
