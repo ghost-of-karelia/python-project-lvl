@@ -21,6 +21,6 @@ def verify_answer(answer, correct_answer, name):
         )
         print(f'Let\'s try again, {name}!')
         return False
-    
+
     print('Correct!')
     return True
