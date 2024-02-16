@@ -3,11 +3,11 @@ from brain_games.consts import ROUNDS_TO_PLAY
 
 
 def welcome_user():
-    
+
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    
+
     return name
 
 
