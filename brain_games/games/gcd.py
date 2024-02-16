@@ -1,26 +1,19 @@
 from random import randint
-from brain_games.cli import request_answer, verify_answer
 
 
-def play(rounds_left, name):
+def play():
 
     print('Find the greatest common divisor of given numbers.')
 
-    for _ in range(rounds_left):
+    a = int(randint(1, 100))
+    b = int(randint(1, 100))
 
-        a = int(randint(1, 100))
-        b = int(randint(1, 100))
-        print(f'Question: {a} {b}')
-        correct_answer = 1
+    correct_answer = 1
+    for i in range(min(a, b), 0, -1):
+        if a % i == 0 and b % i == 0:
+            correct_answer = i
+            break
 
-        answer = int(request_answer())
+    print(f'Question: {a} {b}')
 
-        for i in range(min(a, b), 0, -1):
-            if a % i == 0 and b % i == 0:
-                correct_answer = i
-                break
-
-        if not verify_answer(answer, correct_answer, name):
-            return None
-
-    print(f'Congratulations, {name}!')
+    return correct_answer

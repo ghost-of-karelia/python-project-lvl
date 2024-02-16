@@ -1,24 +1,16 @@
 from random import randint
-from brain_games.cli import request_answer, verify_answer
 
 
-def play(rounds_left, name):
+def play():
 
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    for _ in range(rounds_left):
+    number = randint(0, 100)
+    print('Question:', number)
 
-        number = randint(0, 100)
-        print('Question:', number)
+    if number % 2 == 0:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
 
-        answer = request_answer()
-
-        if number % 2 == 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
-
-        if not verify_answer(answer, correct_answer, name):
-            return None
-
-    print(f'Congratulations, {name}!')
+    return correct_answer

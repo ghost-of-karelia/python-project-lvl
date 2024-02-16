@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.cli import welcome_user
+from brain_games import engine
 
 
 def main():
-    welcome_user()
+
+    engine.welcome_user()
 
 
 if __name__ == '__main__':

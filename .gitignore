@@ -3,3 +3,5 @@ __pycache__/
 /dist/
 poetry.lock
 demo.cast
+.vscode/
+.DS_Store
