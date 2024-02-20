@@ -1,19 +1,26 @@
 from random import randint
+from math import gcd
+
+
+START_GAME_QUESTION = (
+    'Find the greatest common divisor of given numbers.'
+)
+
+NUM_MIN = 1
+NUM_MAX = 100
 
 
 def play():
 
-    print('Find the greatest common divisor of given numbers.')
-
-    a = int(randint(1, 100))
-    b = int(randint(1, 100))
-
-    correct_answer = 1
-    for i in range(min(a, b), 0, -1):
-        if a % i == 0 and b % i == 0:
-            correct_answer = i
-            break
+    a = int(randint(NUM_MIN, NUM_MAX))
+    b = int(randint(NUM_MIN, NUM_MAX))
 
     print(f'Question: {a} {b}')
 
+    return get_correct_answer(a, b)
+
+
+def get_correct_answer(a, b):
+
+    correct_answer = gcd(a, b)
     return correct_answer

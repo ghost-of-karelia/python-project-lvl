@@ -7,7 +7,7 @@ from brain_games import engine
 def main():
 
     name = engine.welcome_user()
-    engine.play(name, prime.play)
+    engine.play(name, prime)
 
 
 if __name__ == '__main__':

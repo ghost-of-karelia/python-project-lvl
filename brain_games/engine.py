@@ -11,11 +11,14 @@ def welcome_user():
     return name
 
 
-def play(name, game_function):
+def play(name, game_module):
 
     for _ in range(ROUNDS_TO_PLAY):
 
-        correct_answer = game_function()
+        correct_answer = game_module.play()
+
+        print(game_module.START_GAME_QUESTION)
+
         answer = prompt.string('Your answer: ')
 
         if str(answer) == str(correct_answer):
