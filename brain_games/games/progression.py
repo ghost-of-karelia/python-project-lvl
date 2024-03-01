@@ -35,6 +35,6 @@ def get_correct_answer(progression):
     correct_answer = progression[correct_answer_position]
     progression[correct_answer_position] = '..'
 
-    print('Question:', *progression)   # Should it be located in play()?
+    print('Question:', *progression)
 
     return correct_answer
