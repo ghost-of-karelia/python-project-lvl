@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "brain-games"
+name = "hexlet-code"
 version = "0.1.0"
 description = "A test project to learn how git, Makefile, Poetry and Flake8 work"
 authors = ["ghost-of-karelia <mitrijpavlov@gmail.com>"]
