@@ -3,6 +3,8 @@
 
 ## Brain Games 
 
+Brain games rule!
+
 ### About
 Brain Games is an easy CLI math game. Answer three time in a row to win the game! 
 
